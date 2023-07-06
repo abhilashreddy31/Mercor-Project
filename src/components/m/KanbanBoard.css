@@ -1,0 +1,205 @@
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.kanban-column {
+  flex: 1;
+  width: 283px;
+  height: 100%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.kanban-column h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.kanban-task {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: move;
+}
+
+.kanban-task:hover {
+  background-color: #f9f9f9;
+}
+
+.kanban-task-content {
+  font-size: 14px;
+}
+
+.container-100 {
+  display: flex;
+  width: 96%;
+  padding: 10px;
+ 
+}
+.title-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid;
+  justify-content: space-between
+  
+}
+
+.title-box.todo {
+
+  border-color: #5030E5;
+}
+
+.title-box.inProgress {
+  border-color: #FFA500
+}
+
+.title-box.done {
+  border-color: #8BC48A;
+}
+
+.task-box-100 {
+  padding-top: 15px;
+}
+.inner-title-box{
+  display: flex;
+  gap:10px;
+  color: #0D062D;
+font-size: 16px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.box-100 {
+  padding-left: 10px;
+  padding-left: 10px;
+}
+.inner-box-100{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.para-box {
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #D58D49;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #DFA87433;
+}
+
+.para-box.todo {
+
+  border-color: #5030E5;
+}
+
+.para-box.inProgress {
+  border-color: #FFA500
+}
+
+.para-box.done {
+  color: #68B266;
+  background-color: #83C29D33;
+}
+
+.h6-box {
+  color: #0D062D;
+  font-size: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 4.5%;
+  margin-top: -1.5%;
+}
+
+.p-box {
+  color: #787486;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 4.5%;
+  margin-top: -13%;
+}
+
+.box-101 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.profile-100 {
+  display: flex;
+  margin-left: 10px;
+}
+
+.profile-101 {
+  display: flex;
+ 
+}
+
+.user-1 {
+  width: 20px;
+  height: 20px;
+}
+
+.user-2 {
+  width: 20px;
+  height: 20px;
+  margin-left: -35%;
+}
+
+.user-3 {
+  width: 20px;
+  height: 20px;
+  margin-left: -70%;
+}
+
+.para-101 {
+  margin-top: 3.5%;
+  margin-left: 2px;
+  color: #787486;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.image-10{
+  width: 97%;
+  height: 50%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.image-box{
+  display: flex;
+  margin-top: -7%;
+}
+.image-20{
+  width: 40%;
+  height: 40%;
+  margin-left: 15px;
+}
+.image-40{
+  width: 90%;
+  height: 40%;
+  margin-top: 0%;
+  margin-left: 5%;
+  padding-bottom: 10px;
+ 
+}

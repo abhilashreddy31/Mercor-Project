@@ -1,0 +1,301 @@
+
+.container-1 {
+    width: 250px;
+    height: auto;
+    border-right: 1px solid #DBDBDB;
+   
+}
+.column-1 {
+    float: left;
+    display: flex;
+
+  }
+  .column-2{
+    float: left;
+    width: 95.5%;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.container-1.open{
+    width: 248px;
+    background-color: red;
+}
+.flex-1{
+    display: flex;
+}
+.box-1 {
+    display: flex;
+    padding: 10px;
+    padding-left: 25px;
+    border-bottom: 1px solid #DBDBDB;
+
+}
+
+btn:hover{
+    cursor: pointer;
+    
+}
+
+
+.box-1 p {
+    width: 60%;
+    color: #0D062D;
+    font-size: 22px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 2%;
+    
+
+}
+
+.arrow {
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-top: 13%;
+    padding-right: 5%;
+
+
+}
+
+.inner-box-2 {
+    border-bottom: 1px solid #DBDBDB;
+    padding-left: 3px;
+
+}
+
+.link {
+    text-decoration: none;
+    color: #787486;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+    
+   
+    padding-left: 8px;
+    display: flex;
+}
+.inner-2{
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: -10% ;
+    margin-bottom: 20px;
+   
+   
+}
+.inner-2:hover{
+    border-radius: 6px;
+    background: rgba(80, 48, 229, 0.08);
+}
+
+.link p {
+    padding-left: 10px;
+}
+
+
+
+.box-3 {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 1%;   
+}
+
+.box-3-p{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box-3 p {
+    color: #787486;
+    font-size: 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 85%;
+    
+    
+
+}
+
+.box-4 {
+
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-top: -10%;
+
+}
+
+.mobileapp {
+    display: flex;
+    padding-left: 10px;
+    margin-right: 10px;
+    background-color:#5030E514; 
+    margin-bottom: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+    
+    
+}
+
+.mobileapp-1 {
+    display: flex;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: #0D062D;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+
+}
+.mobileapp:hover{
+    border-radius: 6px;
+    background: rgba(80, 48, 229, 0.08);
+}
+.mobileapp-1:hover{
+    border-radius: 6px;
+    background: rgba(80, 48, 229, 0.08);
+}
+
+.links p {
+    padding-left: 12px;
+
+}
+
+.dots-1{
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.link-1 {
+    text-decoration: none;
+
+
+    font-family: Inter;
+    font-style: normal;
+
+    line-height: normal;
+    display: flex;
+    color: #787486;
+    font-size: 16px;
+
+
+
+}
+
+.link-1 p {
+    padding-left: 12px;
+
+}
+.union{
+    position: relative;
+    width: 200px;
+}
+.lamp{
+    margin-left: -9.5%;
+    position: absolute;
+    margin-top: 1.5%;
+    border-radius: 33px;
+    background: rgba(252, 214, 74, 0.70);
+    filter: blur(17px);  
+}
+.lamp-1{
+    margin-left: -9.5%;
+    position: absolute;
+    margin-top: 1.5%;
+    border-radius: 33px;
+    background: rgba(252, 214, 74, 0.70);
+    filter: blur(17px);  
+}
+.lamp-2{
+    margin-left: -9.5%;
+    position: absolute;
+    margin-top: 1.5%;
+    border-radius: 33px;
+    
+    
+}
+.box-5{
+    padding-left: 20px;
+    padding-top: 15px;
+    
+}
+
+.box-5-p{
+    color: #000;
+font-size: 14px;
+font-family: Inter;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -13%;
+margin-left: 50px;
+position: absolute;
+}
+.box-5-p1{
+    color: #787486;
+text-align: center;
+font-size: 12px;
+font-family: Inter;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-right: 40px;
+padding-top: 38px;
+padding-left: 25px;
+
+position: relative;
+margin-top: -75%;
+}
+.input-text{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    border: 0px white;
+    background-repeat: no-repeat;
+    background-position: 18px; 
+    outline: none;
+    border: none;
+    border-radius: 6px;   
+}
+
+/* .box-5-p2{
+    color: #000;
+font-size: 14px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+position: relative;
+margin-top: -12%;
+padding-left: 50px;
+} */
