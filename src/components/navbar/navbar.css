@@ -1,0 +1,84 @@
+
+.navcontainer {
+    border-bottom: 1px solid #DBDBDB;
+    display: flex;
+    height: 89.5px;
+    width: 97%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    justify-content: space-between;
+    
+}
+
+.searchbar {
+    margin-top: 3px;
+    flex: 4;
+   
+}
+
+.searchbar1 {
+    background-image: url('file:///C:/Users/91628/OneDrive/Desktop/mercor-project/src/asserts/search.svg');
+    background-repeat: no-repeat;
+    background-position: 18px;
+    padding-left: 60px;
+    outline: none;
+    border: none;
+    width:50%;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+}
+
+.nav-box-1 {
+    display: flex;
+    
+    flex: 1;
+}
+
+.nav-link {
+    padding-left: 20px;
+}
+
+.nav-box-2{
+  flex: 1;
+}
+.name-1 {
+    color: #0D062D;
+    text-align: right;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.name-2 {
+    color: #787486;
+    text-align: right;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -10px;
+}
+.nav-box-3{
+    display: flex;
+   
+}
+.main-profile {
+    border-radius: 100px;
+    margin-right: 15px;
+    flex: 1;
+    padding-left: 20px;
+    
+    
+    
+}
+
+.arrow1 {
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
