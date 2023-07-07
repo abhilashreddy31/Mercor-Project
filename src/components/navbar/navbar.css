@@ -1,5 +1,5 @@
 /* body {
-    overflow-x: hidden;
+    overflow-x:hidden;
 } */
 .navcontainer {
     border-bottom: 1px solid #DBDBDB;
@@ -10,6 +10,7 @@
     align-items: center;
     padding-left: 3%;
     justify-content: space-between;
+    border-left: 1px solid #DBDBDB;
     
 }
 
@@ -73,7 +74,9 @@
     border-radius: 100px;
     margin-right: 15px;
     flex: 1;
-    padding-left: 20px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
     
     
     

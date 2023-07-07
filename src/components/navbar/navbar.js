@@ -6,12 +6,13 @@ import calender from '../../asserts/calendar.svg'
 import message1 from '../../asserts/message1.svg'
 import notification from '../../asserts/notification.svg'
 import arrow1 from '../../asserts/down-arrow.svg'
-import profile from '../../asserts/dhoni.png'
+import profile from '../../asserts/dhoni-1.webp'
 
 import "../main/main.css"
 function Navbar() {
   return (
     <div>
+      
 
             <div className="navcontainer">
                 
@@ -34,7 +35,7 @@ function Navbar() {
 
                     </div>
                 </div>
-                <div></div>
+              
                 
             </div>
 

@@ -1,10 +1,13 @@
+
 .kanban-board {
   justify-content: space-evenly;
   display: flex;
-  width: 96%;
+  width: 100.5%;
   padding: 10px;
+  border-left: 1px solid #DBDBDB;
   
 }
+
 
 .kanban-column {
   flex: 1;
@@ -52,7 +55,6 @@
 }
 
 .title-box.todo {
-
   border-color: #5030E5;
 }
 
@@ -134,7 +136,7 @@ line-height: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 4.5%;
-  margin-top: -13%;
+  margin-top: -10%;
 }
 
 .box-101 {
@@ -151,6 +153,18 @@ line-height: normal;
 .profile-101 {
   display: flex;
  
+}
+.link-2{
+  display: flex;
+  color: #787486;
+font-size: 12px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+padding-right: 10px;
+
 }
 
 .user-1 {

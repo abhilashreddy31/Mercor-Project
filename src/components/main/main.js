@@ -24,11 +24,12 @@ function Main() {
                     <btn className="edit"><img src={edit}></img></btn>
                     <btn className="linkbtn"><img src={link}></img></btn>
                 </div>
+               
                 <div className="main-box-2">
                     <btn className="add"><img src={add}></img></btn>
                     <p className="invite">Invite</p>
                     <div className="profile">
-                        <btn className="profile1" ><img src={profile1}></img></btn>
+                        <btn className="profile11" ><img src={profile1}></img></btn>
                         <btn className="profile1" ><img src={profile2}></img></btn>
                         <btn className="profile1"><img src={profile3}></img></btn>
                         <btn className="profile1"><img src={profile4}></img></btn>

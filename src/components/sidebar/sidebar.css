@@ -1,8 +1,7 @@
 .container-1 {
     width: 250px;
     height: auto;
-    border-right: 1px solid #DBDBDB;
-   
+    
 }
 .container {
     
@@ -58,6 +57,7 @@ btn:hover{
 .arrow {
     margin-left: 25px;
     margin-top: 25px;
+    transform: rotate(270);
 
 }
 
@@ -80,7 +80,7 @@ btn:hover{
 .link {
     text-decoration: none;
     color: #787486;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -164,7 +164,7 @@ btn:hover{
 .links {
     text-decoration: none;
     color: #0D062D;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -266,8 +266,7 @@ font-weight: 400;
 line-height: normal;
 padding-right: 40px;
 padding-top: 38px;
-padding-left: 25px;
-
+padding-left: 20px;
 position: relative;
 margin-top: -75%;
 }

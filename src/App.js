@@ -3,10 +3,11 @@ import Sidebar from './components/sidebar/sidebar';
 import Navbar from './components/navbar/navbar';
 import Main from './components/main/main';
 import KanbanBoard from './components/m/KanbanBoard';
-import Content from './components/content/content';
+// import Content from './components/content/content';
+import './App.css'
 function App() {
   return (
-    <Router>
+    <Router >
       
   
       <div className="container">

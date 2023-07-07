@@ -1,12 +1,12 @@
-
 .maincontainer {
     display: flex;
     justify-content: space-between;
     width: 85%;
+    border-left: 1px solid #DBDBDB;
 }
 
 .main-box-1 {
-    flex: 7;
+    flex: 8;
     display: flex;
     padding-left: 30px;
     padding-top: 20px;
@@ -55,6 +55,8 @@
 .add {
     margin-top: 13%;
     margin-right: 10%;
+    margin-left: -15%;
+    padding-right: 15px;
 
 }
 
@@ -72,6 +74,8 @@
     margin-right: 10%;
     color: #5030E5;
     font-size: 16px;
+    padding-right: 5px;
+    margin-left: -20%;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -81,14 +85,18 @@
 
 .profile {
     display: flex;
-    padding-left: 20px;
+    padding-left: 5px;
     padding-top: 5px;
 
 }
 
 .profile1 {
-    margin-left: -7%;
-
+    margin-left: -5%;
+}
+.profile11 {
+    margin-left: -5%;
+    width: 38px;
+    height: 38px;
 }
 
 
@@ -98,6 +106,7 @@
     padding-left: 30px;
     padding-bottom: 30px;
     justify-content: space-between;
+    border-left: 1px solid #DBDBDB;
 }
 
 .main-box-3 {
@@ -164,17 +173,3 @@
 .line{
     margin-left: 15px;
 }
-/* .maincontainer-2{
-    display: flex;
-    width: 176%;
-    background-color: red;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.main-box-5{
-    width: 30%;
-    margin-right: 25px;
-height:200px;
-border-radius: 10px 10px 0px 0px;
-background: #F5F5F5;
-} */

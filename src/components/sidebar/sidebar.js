@@ -19,10 +19,11 @@ import lamp from '../../asserts/lamp.svg'
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [arrowRotation, setArrowRotation] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth > 768) {
         setIsOpen(false);
       } else {
         setIsOpen(true);
@@ -31,7 +32,6 @@ function Sidebar() {
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -39,29 +39,37 @@ function Sidebar() {
 
   const toggle = () => {
     setIsOpen(!isOpen);
+    setArrowRotation(arrowRotation + 180);
   };
 
+
+
   return (
-    <div style={{width: isOpen ? "248px" : "50px", height: isOpen ? "auto" : "700px", }}className="container-1" >
-      <div style={{ borderBottom: isOpen ? "0.1px solid  #DBDBDB" : "0px solid",}}className="box-1" >
+    <div style={{width: isOpen ? "50px" : "248px", height: isOpen ? "700" : "auto", }} className="container-1" >
+      <div style={{ borderBottom: isOpen ? "0px solid  #DBDBDB" : "1px solid  #DBDBDB",}}className="box-1" >
         
         <img
-          style={{ display: isOpen ? "block" : "none" }}
+          style={{ display: isOpen ? "none" : "block" }}
           className="logo"
           src={logo}
         />
-        <p style={{ display: isOpen ? "block" : "none" }}>Project M. </p>
-        <div style={{ marginLeft: isOpen ? "10px" : "0px" }}>
-          <btn onClick={toggle} to="/Meninavbar">
+        <p style={{ display: isOpen ? "none" : "block" }}>Project M. </p>
+        <div style={{ marginLeft: isOpen ? "0px" : "10px" }}>
+        <btn onClick={toggle} to="/Meninavbar">
             <img
-              style={{ marginLeft: isOpen ? "25px" : "-41%" }}
+              style={{
+                marginLeft: isOpen ? "-41%" : "25px",
+                paddingTop:isOpen ? "20px" :"0",
+                
+                transform: `rotate(${arrowRotation}deg)`, 
+              }}
               className="arrow"
               src={arrow}
             />
           </btn>
         </div>
       </div>
-      <div style={{ display: isOpen ? "block" : "none" }} className="box-2">
+      <div style={{ display: isOpen ? "none" : "block" }} className="box-2">
         <div className="inner-box-2">
           <div className="inner-2">
             <Link className="link " to=""><img src={home} alt="" /><p>Home</p></Link>
@@ -80,11 +88,11 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      <div style={{ display: isOpen ? "block" : "none" }} className="box-3">
+      <div style={{ display: isOpen ? "none" : "block" }} className="box-3">
        
         <p className="box-3-p"> <p>my projects</p><img className="add-1" src={add} /></p>  
       </div>
-      <div style={{ display: isOpen ? "block" : "none" }} className="box-4">
+      <div style={{ display: isOpen ? "none" : "block" }} className="box-4">
         <div className="mobileapp">
           <Link className="links " to=""><img src={point1} alt="" /><p>Mobile App</p></Link>
           <btn><img className="dots-1" src={dots} /></btn>
@@ -100,13 +108,13 @@ function Sidebar() {
         </div>
 
       </div>
-      <div style={{ display: isOpen ? "block" : "none" }} className="box-5">
+      <div style={{ display: isOpen ? "none" : "block" }} className="box-5">
          <img className="union"  src={union}></img>
          <img className="lamp" src={lamp}></img>
          <img className="lamp-1" src={lamp}></img>
          <img className="lamp-2" src={lamp}></img>
          <p className="box-5-p">Thoughts Time</p>
-         <p className="box-5-p1">We don’t have any notice for <br></br> you, till then you can share your thoughts with your <br></br>peers.</p>
+         <p className="box-5-p1">We don’t have any notice for  you, till then you can share your thoughts with your peers.</p>
          <input className="input-text" placeholder="Write a message" type="text"/>
         
       </div>
