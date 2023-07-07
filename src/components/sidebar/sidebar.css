@@ -1,28 +1,26 @@
-
 .container-1 {
     width: 250px;
     height: auto;
     border-right: 1px solid #DBDBDB;
    
 }
-.column-1 {
-    float: left;
+.container {
+    
     display: flex;
 
-  }
-  .column-2{
-    float: left;
-    width: 95.5%;
+}
+
+  
+.sidebar {
+   
+    flex: 1;
+  
   }
   
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
+.navbar {
+    flex: 23;
+    
+}
 .container-1.open{
     width: 248px;
     background-color: red;
@@ -242,7 +240,7 @@ btn:hover{
     
 }
 .box-5{
-    padding-left: 20px;
+    padding-left: 22px;
     padding-top: 15px;
     
 }
