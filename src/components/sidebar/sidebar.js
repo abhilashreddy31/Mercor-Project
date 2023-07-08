@@ -24,7 +24,7 @@ function Sidebar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >600) {
+      if (window.innerWidth > 600) {
         setIsOpen(false);
       } else {
         setIsOpen(true);
@@ -45,9 +45,9 @@ function Sidebar() {
   };
 
   return (
-    <div style={{width: isOpen ? "0px" : "248px", height: isOpen ? "0" : "auto", }} className="container-1" >
-      <div style={{borderBottom: isOpen ? "0px solid #DBDBDB " : "1px solid #DBDBDB",}} className="box-1" >
-        
+    <div style={{ width: isOpen ? "0px" : "248px", height: isOpen ? "0" : "auto", }} className="container-1" >
+      <div style={{ borderBottom: isOpen ? "0px solid #DBDBDB " : "1px solid #DBDBDB", }} className="box-1" >
+
         <img
           style={{ display: isOpen ? "none" : "block" }}
           className="logo"
@@ -55,13 +55,13 @@ function Sidebar() {
         />
         <p style={{ display: isOpen ? "none" : "block" }}>Project M. </p>
         <div style={{ marginLeft: isOpen ? "20%" : "10px" }}>
-        <btn onClick={toggle} to="/Meninavbar">
+          <btn onClick={toggle} to="/Meninavbar">
             <img
               style={{
                 marginLeft: isOpen ? "0%" : "20px",
-                
+
                 position: arrowPosition,
-                transform: `rotate(${arrowRotation}deg)`, 
+                transform: `rotate(${arrowRotation}deg)`,
               }}
               className="arrow"
               src={arrow}
@@ -89,8 +89,8 @@ function Sidebar() {
         </div>
       </div>
       <div style={{ display: isOpen ? "none" : "block" }} className="box-3">
-       
-        <p className="box-3-p"> <p>my projects</p><img className="add-1" src={add} /></p>  
+
+        <p className="box-3-p"> <p>my projects</p><img className="add-1" src={add} /></p>
       </div>
       <div style={{ display: isOpen ? "none" : "block" }} className="box-4">
         <div className="mobileapp">
@@ -109,16 +109,16 @@ function Sidebar() {
 
       </div>
       <div style={{ display: isOpen ? "none" : "block" }} className="box-5">
-         <img className="union"  src={union}></img>
-         <img className="lamp" src={lamp}></img>
-         <img className="lamp-1" src={lamp}></img>
-         <img className="lamp-2" src={lamp}></img>
-         <p className="box-5-p">Thoughts Time</p>
-         <p className="box-5-p1">We don’t have any notice for  you, till then you can share your thoughts with your peers.</p>
-         <input className="input-text" placeholder="Write a message" type="text"/>
-        
+        <img className="union" src={union}></img>
+        <img className="lamp" src={lamp}></img>
+        <img className="lamp-1" src={lamp}></img>
+        <img className="lamp-2" src={lamp}></img>
+        <p className="box-5-p">Thoughts Time</p>
+        <p className="box-5-p1">We don’t have any notice for  you, till then you can share your thoughts with your peers.</p>
+        <input className="input-text" placeholder="Write a message" type="text" />
+
       </div>
-      
+
     </div>
   )
 }

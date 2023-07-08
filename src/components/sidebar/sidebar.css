@@ -2,44 +2,48 @@
     width: 250px;
     height: auto;
     border-right: 1px solid #DBDBDB;
-    
-    
+
+
 }
+
 .container {
-    
+
     display: flex;
 
 }
 
-  
+
 .sidebar {
-   
+
     flex: 1;
-  
-  }
-  
+
+}
+
 .navbar {
     flex: 23;
-    
+
 }
 
-@media  ( max-width: 600px){
-       .sidebar{
+@media (max-width: 600px) {
+    .sidebar {
         flex: 1;
-       }
-       .navbar{
-        flex:25;
-       }
-}
-    
+    }
 
-.container-1.open{
-    width: 248px;
-    
+    .navbar {
+        flex: 25;
+    }
 }
-.flex-1{
+
+
+.container-1.open {
+    width: 248px;
+
+}
+
+.flex-1 {
     display: flex;
 }
+
 .box-1 {
     display: flex;
     padding: 10px;
@@ -48,9 +52,9 @@
 
 }
 
-btn:hover{
+btn:hover {
     cursor: pointer;
-    
+
 }
 
 
@@ -63,7 +67,7 @@ btn:hover{
     font-weight: 600;
     line-height: normal;
     padding-left: 2%;
-    
+
 
 }
 
@@ -97,21 +101,23 @@ btn:hover{
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;   
-    
-   
+    line-height: normal;
+
+
     padding-left: 8px;
     display: flex;
 }
-.inner-2{
+
+.inner-2 {
     display: flex;
     margin-bottom: 0px;
-    margin-top: -10% ;
+    margin-top: -10%;
     margin-bottom: 20px;
-   
-   
+
+
 }
-.inner-2:hover{
+
+.inner-2:hover {
     border-radius: 6px;
     background: rgba(80, 48, 229, 0.08);
 }
@@ -125,10 +131,10 @@ btn:hover{
 .box-3 {
     display: flex;
     padding-left: 30px;
-    padding-top: 1%;   
+    padding-top: 1%;
 }
 
-.box-3-p{
+.box-3-p {
     display: flex;
     justify-content: space-between;
 }
@@ -143,8 +149,8 @@ btn:hover{
     line-height: normal;
     text-transform: uppercase;
     width: 85%;
-    
-    
+
+
 
 }
 
@@ -160,12 +166,12 @@ btn:hover{
     display: flex;
     padding-left: 10px;
     margin-right: 10px;
-    background-color:#5030E514; 
+    background-color: #5030E514;
     margin-bottom: 8px;
     margin-top: 10px;
     border-radius: 6px;
-    
-    
+
+
 }
 
 .mobileapp-1 {
@@ -185,11 +191,13 @@ btn:hover{
     display: flex;
 
 }
-.mobileapp:hover{
+
+.mobileapp:hover {
     border-radius: 6px;
     background: rgba(80, 48, 229, 0.08);
 }
-.mobileapp-1:hover{
+
+.mobileapp-1:hover {
     border-radius: 6px;
     background: rgba(80, 48, 229, 0.08);
 }
@@ -199,7 +207,7 @@ btn:hover{
 
 }
 
-.dots-1{
+.dots-1 {
     margin-left: 55px;
     margin-top: 25px;
 }
@@ -224,39 +232,44 @@ btn:hover{
     padding-left: 12px;
 
 }
-.union{
+
+.union {
     position: relative;
     width: 200px;
 }
-.lamp{
+
+.lamp {
     margin-left: -45%;
     position: absolute;
     margin-top: 6%;
     border-radius: 33px;
     background: rgba(252, 214, 74, 0.70);
-    filter: blur(17px);  
+    filter: blur(17px);
 }
-.lamp-1{
+
+.lamp-1 {
     margin-left: -45%;
     position: absolute;
     margin-top: 6%;
     border-radius: 33px;
     background: rgba(252, 214, 74, 0.70);
-    filter: blur(17px);  
+    filter: blur(17px);
 }
-.lamp-2{
+
+.lamp-2 {
     margin-left: -45%;
     position: absolute;
     margin-top: 6%;
     border-radius: 33px;
-    
-    
+
+
 }
-.box-5{
+
+.box-5 {
     padding-left: 22px;
     padding-top: 15px;
     position: relative;
-    
+
 }
 
 .box-5-p {
@@ -270,6 +283,7 @@ btn:hover{
     padding-left: 50px;
     position: relative;
 }
+
 .box-5-p1 {
     color: #787486;
     text-align: center;
@@ -284,7 +298,8 @@ btn:hover{
     position: relative;
     margin-top: -75%;
 }
-.input-text{
+
+.input-text {
     margin-top: 5px;
     margin-left: 3.7%;
     border-radius: 6px;
@@ -293,8 +308,8 @@ btn:hover{
     background-color: white;
     border: 0px white;
     background-repeat: no-repeat;
-    background-position: 18px; 
+    background-position: 18px;
     outline: none;
     border: none;
-    border-radius: 6px;   
+    border-radius: 6px;
 }

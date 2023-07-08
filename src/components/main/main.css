@@ -2,75 +2,84 @@
     display: flex;
     justify-content: space-between;
     width: 85%;
-   
+
 }
+
 @media (max-width: 1190px) {
     .maincontainer {
-      width: auto;
-     
+        width: auto;
+
     }
-  
-    .profile11{
+
+    .profile11 {
         display: none;
     }
-    .profile1{
+
+    .profile1 {
         display: none;
     }
-    .invite{
+
+    .invite {
         display: none;
     }
-    .two-1{
-        display: none;
-    } 
-    .add{
+
+    .two-1 {
         display: none;
     }
-   
-  }
+
+    .add {
+        display: none;
+    }
+
+}
 
 @media (max-width:1060px) {
-    .line{
+    .line {
         display: none;
     }
-    .btn-3{
+
+    .btn-3 {
         display: none;
     }
-   
-    .btn-4{
+
+    .btn-4 {
         display: none;
     }
-   
-   
-  
+
+
+
 }
 
 @media (max-width:620px) {
-    .main-box-4{
+    .main-box-4 {
         flex: 2.2;
     }
-    .main-box-3{
+
+    .main-box-3 {
         flex: 3;
     }
-   }
-    
+}
+
 
 
 @media (max-width:600px) {
-    .main-box-1{
+    .main-box-1 {
         padding-left: -10%;
         margin-left: -5%;
-        
-    }
-    .main-box-3{
-       margin-left: -5%;
 
     }
-   
-   
-    
-  
-    
-}  
+
+    .main-box-3 {
+        margin-left: -5%;
+
+    }
+
+
+
+
+
+}
+
 .main-box-1 {
     flex: 8;
     display: flex;
@@ -115,7 +124,7 @@
     width: 90px;
     padding-top: 42px;
     justify-content: space-between;
-   
+
 }
 
 .add {
@@ -126,12 +135,12 @@
 
 }
 
-.two-1{
+.two-1 {
     margin-top: 3.3%;
-    
+
     position: relative;
     margin-left: -14.5%;
-  
+
     color: #D25B68;
 }
 
@@ -159,6 +168,7 @@
 .profile1 {
     margin-left: -5%;
 }
+
 .profile11 {
     margin-left: -5%;
     width: 38px;
@@ -166,7 +176,7 @@
 }
 
 
-.maincontaner-1{
+.maincontaner-1 {
     display: flex;
     width: 93%;
     padding-left: 30px;
@@ -177,8 +187,8 @@
 .main-box-3 {
     display: flex;
     padding-top: 20px;
-    
-    
+
+
 }
 
 .btn-1 {
@@ -195,7 +205,7 @@
     font-weight: 500;
 }
 
-.btn-1 img{
+.btn-1 img {
     margin-left: 6px;
     margin-right: 6px;
 }
@@ -205,8 +215,9 @@
     padding-top: 20px;
     align-items: center;
     align-items: center;
- 
+
 }
+
 .btn-2 {
     padding: 6px 10px;
     border-radius: 6px;
@@ -219,14 +230,16 @@
     margin-left: 7%;
 }
 
-.btn-2 img{
-    
+.btn-2 img {
+
     margin-right: 7px;
 }
-.btn-3{
+
+.btn-3 {
     margin-left: 12px;
 }
-.btn-4{
+
+.btn-4 {
     background-color: #5030E5;
     margin-left: 12px;
     padding-top: 7px;
@@ -235,6 +248,7 @@
     padding-bottom: 4px;
     border-radius: 5px;
 }
-.line{
+
+.line {
     margin-left: 15px;
 }

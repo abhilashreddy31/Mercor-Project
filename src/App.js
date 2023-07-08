@@ -8,24 +8,24 @@ import './App.css'
 function App() {
   return (
     <Router >
-      
-  
+
+
       <div className="container">
         <div className='sidebar'>
           <Sidebar></Sidebar>
         </div>
-        
-      
+
+
         <div className='navbar'>
-            <Navbar />
-            <Main></Main>
-            <KanbanBoard></KanbanBoard>
-            {/* <Content></Content> */}
+          <Navbar />
+          <Main></Main>
+          <KanbanBoard></KanbanBoard>
+          {/* <Content></Content> */}
         </div>
-        
-      
-    </div>
-  </Router>
+
+
+      </div>
+    </Router>
   );
 }
 

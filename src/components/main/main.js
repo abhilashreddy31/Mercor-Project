@@ -24,7 +24,7 @@ function Main() {
                     <btn className="edit"><img src={edit}></img></btn>
                     <btn className="linkbtn"><img src={link}></img></btn>
                 </div>
-               
+
                 <div className="main-box-2">
                     <btn className="add"><img src={add}></img></btn>
                     <p className="invite">Invite</p>
@@ -42,19 +42,19 @@ function Main() {
             </div>
             <div className="maincontaner-1">
                 <div className="main-box-3">
-                    <btn className="btn-1"><img src={filter}/>Filter<img src={arrow2}/></btn>
-                    <btn className="btn-1"><img src={calender1}/>Today<img src={arrow2}/></btn>
+                    <btn className="btn-1"><img src={filter} />Filter<img src={arrow2} /></btn>
+                    <btn className="btn-1"><img src={calender1} />Today<img src={arrow2} /></btn>
 
                 </div>
                 <div className="main-box-4">
-                    <btn className="btn-2"><img src={user}/>Share</btn>
+                    <btn className="btn-2"><img src={user} />Share</btn>
                     <img className="line" src={line}></img>
-                    <btn className="btn-4"><img  src={pause}/></btn>
-                    <btn className="btn-3"><img src={menu}/></btn>
+                    <btn className="btn-4"><img src={pause} /></btn>
+                    <btn className="btn-3"><img src={menu} /></btn>
                 </div>
 
             </div>
-            
+
         </div>
     )
 }

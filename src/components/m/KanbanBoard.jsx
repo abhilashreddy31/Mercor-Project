@@ -21,7 +21,7 @@ import image40 from '../../asserts/image-4.png'
 const initialColumns = {
   todo: {
     title: 'To Do',
-  
+
     tasks: [
       { id: 'task-1', title: 'Low', title1: 'Brainstorming', content: "Brainstorming brings team members' diverse experience into play.", profile1: profile60, profile2: profile90, profile3: profile80 },
       { id: 'task-2', title: 'High', title1: 'Research', content: "User research helps you to create an optimal product for users.", profile1: profile70, profile2: profile100, },
@@ -92,74 +92,74 @@ const KanbanBoard = () => {
 
   return (
     <div className='container-200'>
-    <div className="kanban-board">
-      <div className='container-100'>
-        {Object.entries(columns).map(([columnId, column]) => (
-          <div className='box-100'>
-            <div
-              key={columnId}
-              className="kanban-column"
-              onDragOver={(event) => handleDragOver(event)}
-              onDrop={(event) => handleDrop(event, columnId)}
-            >
-              <div className={`title-box ${columnId}`}>
-                <div className='inner-title-box'>
-                  <img src={column.image1} alt="" />
-                  <p>{column.title}</p>
-                  <span className="count">{column.tasks.length}</span> {/* Add count */}
-                </div>
-                <btn><img className='image-3' src={column.image3}></img></btn>
-              </div>
-              <div className='task-box-100'>
-                {column.tasks.map((task) => (
-                  <div
-                    key={task.id}
-                    className="kanban-task"
-                    draggable
-                    onDragStart={(event) => handleDragStart(event, task, columnId)}
-                  >
-                    <div className='box-100'>
-                      <div className='inner-box-100'>
-                        <div className='para-box-100'>
-                          <p className={`para-box ${columnId}`}>
-                            {task.title}
-                          </p>
-                        </div>
-                        <img className='bots-100' src={column.image2}></img>
-                      </div>
-
-                    </div>
-                    <h6 className='h6-box'>{task.title1}</h6>
-                    <p className='p-box'>{task.content}</p>
-                    <img className="image-10" src={task.image10}></img>
-                    <div className="image-box">
-                      <img className="image-20" src={task.image20}></img>
-                      <img className="image-20" src={task.image30}></img>
-                    </div>
-                    <img className="image-40" src={task.image40}></img>
-
-                    <div className={`box-101 ${columnId}`}>
-
-                      <div className="profile-100">
-                        <Link className="link-1 " to="">{task.profile1 && <img className='user-1' src={task.profile1} alt="Profile 1" />}</Link>
-                        <Link className="link-1 " to="">{task.profile2 && <img className='user-2' src={task.profile2} alt="Profile 2" />}</Link>
-                        <Link className="link-1 " to="">{task.profile3 && <img className='user-3' src={task.profile3} alt="Profile 3" />}</Link>
-                      </div>
-                      <div className="profile-101">
-                        <Link className="link-2 " to=""><img className='user-1' src={comments} alt="" /><p className="para-101">Comments</p></Link>
-                        <Link className="link-2 " to=""><img className='user-1' src={files} alt="" /><p className="para-101"> Files</p></Link>
-
-                      </div>
-                    </div>
+      <div className="kanban-board">
+        <div className='container-100'>
+          {Object.entries(columns).map(([columnId, column]) => (
+            <div className='box-100'>
+              <div
+                key={columnId}
+                className="kanban-column"
+                onDragOver={(event) => handleDragOver(event)}
+                onDrop={(event) => handleDrop(event, columnId)}
+              >
+                <div className={`title-box ${columnId}`}>
+                  <div className='inner-title-box'>
+                    <img src={column.image1} alt="" />
+                    <p>{column.title}</p>
+                    <span className="count">{column.tasks.length}</span> {/* Add count */}
                   </div>
-                ))}
-              </div>
+                  <btn><img className='image-3' src={column.image3}></img></btn>
+                </div>
+                <div className='task-box-100'>
+                  {column.tasks.map((task) => (
+                    <div
+                      key={task.id}
+                      className="kanban-task"
+                      draggable
+                      onDragStart={(event) => handleDragStart(event, task, columnId)}
+                    >
+                      <div className='box-100'>
+                        <div className='inner-box-100'>
+                          <div className='para-box-100'>
+                            <p className={`para-box ${columnId}`}>
+                              {task.title}
+                            </p>
+                          </div>
+                          <img className='bots-100' src={column.image2}></img>
+                        </div>
 
+                      </div>
+                      <h6 className='h6-box'>{task.title1}</h6>
+                      <p className='p-box'>{task.content}</p>
+                      <img className="image-10" src={task.image10}></img>
+                      <div className="image-box">
+                        <img className="image-20" src={task.image20}></img>
+                        <img className="image-20" src={task.image30}></img>
+                      </div>
+                      <img className="image-40" src={task.image40}></img>
+
+                      <div className={`box-101 ${columnId}`}>
+
+                        <div className="profile-100">
+                          <Link className="link-1 " to="">{task.profile1 && <img className='user-1' src={task.profile1} alt="Profile 1" />}</Link>
+                          <Link className="link-1 " to="">{task.profile2 && <img className='user-2' src={task.profile2} alt="Profile 2" />}</Link>
+                          <Link className="link-1 " to="">{task.profile3 && <img className='user-3' src={task.profile3} alt="Profile 3" />}</Link>
+                        </div>
+                        <div className="profile-101">
+                          <Link className="link-2 " to=""><img className='user-1' src={comments} alt="" /><p className="para-101">Comments</p></Link>
+                          <Link className="link-2 " to=""><img className='user-1' src={files} alt="" /><p className="para-101"> Files</p></Link>
+
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };
