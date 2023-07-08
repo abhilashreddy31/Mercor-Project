@@ -5,18 +5,45 @@
     border-bottom: 1px solid #DBDBDB;
     display: flex;
     height: 89.5px;
-    width: 97%;
+    width: auto;
     justify-content: space-between;
     align-items: center;
     padding-left: 3%;
     justify-content: space-between;
-    border-left: 1px solid #DBDBDB;
     
 }
+@media (max-width: 1050px) {
+    .nav-box-2{
+       display: none;
+    }
+  }
+@media (max-width:780px) {
+   
+    .nav-box-10{
+        display: none;
+    }
+    .searchbar{
+        padding-left: 30px;
+    }
+    
+}
+@media (max-width: 600px) {
+    .navcontainer {
+      width: 100%; 
+      justify-content: space-between;
+      padding-left: -40%;
+     
+    }
+     .nav-box-3{
+        flex: 1.2;
+     }  
+   
+  }
+
 
 .searchbar {
     margin-top: 3px;
-    flex: 4;
+    flex: 5;
    
 }
 
@@ -24,7 +51,7 @@
     background-image: url('file:///C:/Users/91628/OneDrive/Desktop/mercor-project/src/asserts/search.svg');
     background-repeat: no-repeat;
     background-position: 18px;
-    padding-left: 60px;
+    padding-left: 20%;
     outline: none;
     border: none;
     width:50%;

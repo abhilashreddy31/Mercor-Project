@@ -90,6 +90,7 @@ const KanbanBoard = () => {
   };
 
   return (
+    <div className='container-200'>
     <div className="kanban-board">
       <div className='container-100'>
         {Object.entries(columns).map(([columnId, column]) => (
@@ -156,6 +157,7 @@ const KanbanBoard = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

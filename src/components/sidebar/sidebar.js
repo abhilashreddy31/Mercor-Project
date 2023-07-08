@@ -20,10 +20,11 @@ import lamp from '../../asserts/lamp.svg'
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [arrowRotation, setArrowRotation] = useState(0);
+  const [arrowPosition, setArrowPosition] = useState("absolute");
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth >600) {
         setIsOpen(false);
       } else {
         setIsOpen(true);
@@ -40,13 +41,12 @@ function Sidebar() {
   const toggle = () => {
     setIsOpen(!isOpen);
     setArrowRotation(arrowRotation + 180);
+    setArrowPosition(isOpen ? "absolute" : "50px");
   };
 
-
-
   return (
-    <div style={{width: isOpen ? "50px" : "248px", height: isOpen ? "700" : "auto", }} className="container-1" >
-      <div style={{ borderBottom: isOpen ? "0px solid  #DBDBDB" : "1px solid  #DBDBDB",}}className="box-1" >
+    <div style={{width: isOpen ? "0px" : "248px", height: isOpen ? "0" : "auto", }} className="container-1" >
+      <div style={{borderBottom: isOpen ? "0px solid #DBDBDB " : "1px solid #DBDBDB",}} className="box-1" >
         
         <img
           style={{ display: isOpen ? "none" : "block" }}
@@ -54,13 +54,13 @@ function Sidebar() {
           src={logo}
         />
         <p style={{ display: isOpen ? "none" : "block" }}>Project M. </p>
-        <div style={{ marginLeft: isOpen ? "0px" : "10px" }}>
+        <div style={{ marginLeft: isOpen ? "20%" : "10px" }}>
         <btn onClick={toggle} to="/Meninavbar">
             <img
               style={{
-                marginLeft: isOpen ? "-41%" : "25px",
-                paddingTop:isOpen ? "20px" :"0",
+                marginLeft: isOpen ? "0%" : "20px",
                 
+                position: arrowPosition,
                 transform: `rotate(${arrowRotation}deg)`, 
               }}
               className="arrow"
