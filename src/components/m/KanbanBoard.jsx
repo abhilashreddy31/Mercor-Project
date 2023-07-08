@@ -21,6 +21,7 @@ import image40 from '../../asserts/image-4.png'
 const initialColumns = {
   todo: {
     title: 'To Do',
+  
     tasks: [
       { id: 'task-1', title: 'Low', title1: 'Brainstorming', content: "Brainstorming brings team members' diverse experience into play.", profile1: profile60, profile2: profile90, profile3: profile80 },
       { id: 'task-2', title: 'High', title1: 'Research', content: "User research helps you to create an optimal product for users.", profile1: profile70, profile2: profile100, },
@@ -105,6 +106,7 @@ const KanbanBoard = () => {
                 <div className='inner-title-box'>
                   <img src={column.image1} alt="" />
                   <p>{column.title}</p>
+                  <span className="count">{column.tasks.length}</span> {/* Add count */}
                 </div>
                 <btn><img className='image-3' src={column.image3}></img></btn>
               </div>

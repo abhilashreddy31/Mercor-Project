@@ -49,14 +49,7 @@
     background-color: #f5f5f5;
     border-radius: 16px;
   }
-  .p-box{
-   
-  }
-  /* .container-100 {
-    flex-direction: column;
-    justify-content: space-between;
-    
-  } */
+
 }
 @media (max-width:1180px) {
   .container-100 {
@@ -89,7 +82,19 @@
 .title-box.inProgress {
   border-color: #FFA500
 }
-
+.count {
+  margin-top: 16px;
+  margin-bottom: 17px;
+  padding: 4px 6px;
+  border-radius: 100px;
+  color: #625F6D;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #E0E0E0;
+}
 .title-box.done {
   border-color: #8BC48A;
 }
